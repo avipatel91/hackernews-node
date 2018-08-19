@@ -1,6 +1,7 @@
 const Query = require('./resolvers/Query')
 const Mutation = require('./resolvers/Mutation')
 const Subscription = require('./resolvers/Subscription')
+const Feed = require('./resolvers/Feed')
 const AuthPayload = require('./resolvers/AuthPayload')
 const { GraphQLServer } = require('graphql-yoga')
 const { Prisma } = require('prisma-binding')
@@ -9,6 +10,7 @@ const resolvers = {
   Query,
   Mutation,
   Subscription,
+  Feed,
   AuthPayload
 }
 
